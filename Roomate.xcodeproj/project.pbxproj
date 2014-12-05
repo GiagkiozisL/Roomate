@@ -166,6 +166,7 @@
 		4509794E1A31BB00008B4386 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RM;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = flowerApps;
 				TargetAttributes = {
