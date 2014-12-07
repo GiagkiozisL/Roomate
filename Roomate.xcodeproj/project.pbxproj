@@ -15,6 +15,12 @@
 		4509796A1A31BB00008B4386 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450979691A31BB00008B4386 /* Images.xcassets */; };
 		4509796D1A31BB00008B4386 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4509796B1A31BB00008B4386 /* LaunchScreen.xib */; };
 		450979791A31BB00008B4386 /* RoomateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450979781A31BB00008B4386 /* RoomateTests.m */; };
+		452F39D51A31D9E7005235A7 /* RMImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F39D41A31D9E7005235A7 /* RMImageTransformer.m */; };
+		452F39D81A31DA6A005235A7 /* RMItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 452F39D71A31DA6A005235A7 /* RMItem.m */; };
+		452F39DA1A31DB31005235A7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452F39D91A31DB31005235A7 /* CoreData.framework */; };
+		452F39DC1A31DB39005235A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452F39DB1A31DB39005235A7 /* UIKit.framework */; };
+		45B44CBB1A3495FB0053F69F /* RMItemstore.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B44CBA1A3495FB0053F69F /* RMItemstore.m */; };
+		45B44CBE1A34A0E70053F69F /* RMImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B44CBD1A34A0E70053F69F /* RMImageStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,16 @@
 		450979721A31BB00008B4386 /* RoomateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		450979771A31BB00008B4386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		450979781A31BB00008B4386 /* RoomateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomateTests.m; sourceTree = "<group>"; };
+		452F39D31A31D9E7005235A7 /* RMImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMImageTransformer.h; sourceTree = "<group>"; };
+		452F39D41A31D9E7005235A7 /* RMImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMImageTransformer.m; sourceTree = "<group>"; };
+		452F39D61A31DA6A005235A7 /* RMItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMItem.h; sourceTree = "<group>"; };
+		452F39D71A31DA6A005235A7 /* RMItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMItem.m; sourceTree = "<group>"; };
+		452F39D91A31DB31005235A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		452F39DB1A31DB39005235A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		45B44CB91A3495FB0053F69F /* RMItemstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMItemstore.h; sourceTree = "<group>"; };
+		45B44CBA1A3495FB0053F69F /* RMItemstore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMItemstore.m; sourceTree = "<group>"; };
+		45B44CBC1A34A0E70053F69F /* RMImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMImageStore.h; sourceTree = "<group>"; };
+		45B44CBD1A34A0E70053F69F /* RMImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMImageStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452F39DC1A31DB39005235A7 /* UIKit.framework in Frameworks */,
+				452F39DA1A31DB31005235A7 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,10 @@
 		4509794D1A31BB00008B4386 = {
 			isa = PBXGroup;
 			children = (
+				452F39DD1A31DC24005235A7 /* Controllers */,
+				452F39DB1A31DB39005235A7 /* UIKit.framework */,
+				452F39D91A31DB31005235A7 /* CoreData.framework */,
+				452F39D21A31D9C6005235A7 /* Class */,
 				450979581A31BB00008B4386 /* Roomate */,
 				450979751A31BB00008B4386 /* RoomateTests */,
 				450979571A31BB00008B4386 /* Products */,
@@ -120,6 +142,28 @@
 				450979771A31BB00008B4386 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		452F39D21A31D9C6005235A7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				452F39D31A31D9E7005235A7 /* RMImageTransformer.h */,
+				452F39D41A31D9E7005235A7 /* RMImageTransformer.m */,
+				452F39D61A31DA6A005235A7 /* RMItem.h */,
+				452F39D71A31DA6A005235A7 /* RMItem.m */,
+				45B44CB91A3495FB0053F69F /* RMItemstore.h */,
+				45B44CBA1A3495FB0053F69F /* RMItemstore.m */,
+				45B44CBC1A34A0E70053F69F /* RMImageStore.h */,
+				45B44CBD1A34A0E70053F69F /* RMImageStore.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		452F39DD1A31DC24005235A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,10 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B44CBE1A34A0E70053F69F /* RMImageStore.m in Sources */,
 				4509795F1A31BB00008B4386 /* AppDelegate.m in Sources */,
 				450979621A31BB00008B4386 /* Roomate.xcdatamodeld in Sources */,
 				450979651A31BB00008B4386 /* ViewController.m in Sources */,
+				452F39D81A31DA6A005235A7 /* RMItem.m in Sources */,
+				45B44CBB1A3495FB0053F69F /* RMItemstore.m in Sources */,
 				4509795C1A31BB00008B4386 /* main.m in Sources */,
+				452F39D51A31D9E7005235A7 /* RMImageTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +467,7 @@
 				4509797E1A31BB00008B4386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4509797F1A31BB00008B4386 /* Build configuration list for PBXNativeTarget "RoomateTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +476,7 @@
 				450979811A31BB00008B4386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
